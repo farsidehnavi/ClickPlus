@@ -1,0 +1,27 @@
+.Main {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: 1rem;
+  display: grid;
+}
+
+.Logo {
+  height: 2.5rem;
+  /* width: 2rem; */
+  place-self: center;
+}
+
+.Title {
+  margin: 0;
+  font-size: medium;
+}
+
+.Subtitle {
+  margin: 0;
+  font-size: small;
+}
+
+.InnerFlex {
+  display: flex;
+  gap: 2rem;
+}

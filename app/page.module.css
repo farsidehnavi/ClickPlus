@@ -1,0 +1,153 @@
+.ColorPalate {
+  color: #f6faf9;
+  color: #399aa0;
+  color: #0a3747;
+  /* Text */
+  color: #b9bdc0;
+}
+
+/* 
+#f6faf9
+#399aa0
+#0a3747
+#b9bdc0
+*/
+
+.Main {
+  background-color: #f6faf9;
+  height: 85dvh;
+  padding-top: 15dvh;
+}
+
+.FirstRow {
+  display: flex;
+  width: calc(100dvw - 4rem);
+  place-content: space-evenly;
+  padding: 2rem;
+}
+
+.Img {
+  height: 35vw;
+  width: 35vw;
+}
+
+.FirstRowTextSection {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  color: #0a3747;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.WTitle {
+  color: #f6faf9;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.Subtitle {
+  color: #0a3747;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.WSubtitle {
+  color: #f6faf9;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.Text {
+  color: #b9bdc0;
+}
+
+.StartRow {
+  display: flex;
+  gap: .5rem;
+}
+
+.StartButton {
+  border: #399aa0 1px solid;
+  place-self: center;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #399aa0;
+  color: white;
+  cursor: pointer;
+  height: 3rem;
+  display: flex;
+  place-content: space-around;
+  gap: 1rem;
+  padding: 0 1rem;
+  width: 25vh;
+}
+
+.BuyButton {
+  border: #399aa0 1px solid;
+  place-self: center;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  color: #399aa0;
+  background-color: transparent;
+  cursor: pointer;
+  height: 3rem;
+  place-content: space-around;
+  padding: 0 1rem;
+  width: 25vh;
+}
+
+.ArrowIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  place-self: center;
+}
+
+.Icons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.IconItem {
+  display: flex;
+  gap: .5rem;
+}
+
+.IconImg {
+  height: 6vh;
+  width: 6vh;
+  place-self: center;
+  gap: .5rem;
+}
+
+.IconText {
+  margin: 0;
+  place-self: center;
+  color: #0a3747;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.ButtonText {
+  place-self: center;
+}
+
+.Edge {
+  width: 100%;
+}
+
+.DarkPage {
+  background-color: #0a3747;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -20vh;
+  padding-top: 20vh;
+}
