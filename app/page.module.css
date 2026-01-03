@@ -71,7 +71,7 @@
 
 .StartRow {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .StartButton {
@@ -118,14 +118,14 @@
 
 .IconItem {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .IconImg {
   height: 6vh;
   width: 6vh;
   place-self: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .IconText {
@@ -150,4 +150,43 @@
   height: 100vh;
   margin-top: -20vh;
   padding-top: 20vh;
+}
+
+.Newspaper {
+  display: flex;
+  flex-direction: column;
+}
+
+.NTitle {
+  color: #f6faf9;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.JoinRow {
+  display: flex;
+}
+
+.Inp {
+  height: 3rem;
+  border: #f6faf9 1px solid;
+  border-radius: 0.5rem;
+  margin-left: -1rem;
+  padding: 0 1rem;
+  background-color: #0a3747;
+  width: 40vh;
+}
+
+.Join {
+  place-self: center;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #f6faf9;
+  color: #0a3747;
+  cursor: pointer;
+  height: calc(3rem + 2px);
+  padding: 0 1rem;
+  width: 15vh;
+  border: none;
 }
