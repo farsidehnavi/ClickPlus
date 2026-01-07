@@ -25,12 +25,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }:{children:React.ReactNode}) {
   return (
     // <ClerkProvider localization={faIR}>
-      <html>
-        <body>
-          <Header />
-          {children}
-        </body>
-      </html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body>
+        <Header />
+        {children}
+      </body>
+    </html>
     // </ClerkProvider>
-  )
+  );
 }

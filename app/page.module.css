@@ -16,7 +16,6 @@
 .Main {
   background-color: #f6faf9;
   height: 85dvh;
-  padding-top: 15dvh;
 }
 
 .FirstRow {
@@ -175,7 +174,7 @@
   margin-left: -1rem;
   padding: 0 1rem;
   background-color: #0a3747;
-  width: 40vh;
+  width: 40vw;
 }
 
 .Join {
@@ -189,4 +188,35 @@
   padding: 0 1rem;
   width: 15vh;
   border: none;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .Img {
+    display: none;
+  }
+
+  .Title,.NTitle {
+    font-size: 1.5rem;
+  }
+
+  .Subtitle {
+    font-size: 1.1rem;
+  }
+
+  .FirstRowTextSection {
+    width: 100%;
+  }
+
+  .IconText {
+    font-size: 1rem;
+  }
+
+  .IconImg {
+    height: 4vh;
+    width: 4vh;
+  }
+
+  .Icons {
+    margin: 1rem 0;
+  }
 }

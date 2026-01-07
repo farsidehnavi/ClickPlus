@@ -1,11 +1,8 @@
 .Main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   place-content: space-between;
   background-color: #f6faf9;
+  width: 100%;
 }
 
 .MiddleSection {
@@ -25,13 +22,14 @@
 .LeftSection {
   display: flex;
   margin: 1rem;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.SignIn,.SignUp {
+.SignIn,
+.SignUp {
   place-self: center;
-  border-radius: .5rem;
-  padding: .7rem 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
   cursor: pointer;
 }
 
@@ -45,4 +43,31 @@
   background-color: #399aa0;
   border: none;
   color: white;
+}
+
+.Bars {
+  color: #399aa0;
+  place-self: center;
+  margin: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .Main {
+    width: unset;
+  }
+
+  .Menu {
+    display: none;
+  }
+
+  .SignIn,
+  .SignUp {
+    padding: 0.4rem .7rem;
+  }
+
+  .Bars {
+    display: block;
+  }
 }

@@ -1,5 +1,6 @@
 import style from "./Header.module.css";
 import Logo from "../../Atoms/Logo/Logo";
+import {FaBars} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
       <div className={style.LeftSection}>
         <button className={style.SignIn}>ورود</button>
         <button className={style.SignUp}>ثبت نام</button>
+        <FaBars className={style.Bars} />
       </div>
     </div>
   );
