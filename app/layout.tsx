@@ -1,5 +1,5 @@
 import { type Metadata } from "next";
-import { faIR } from '@clerk/localizations'
+// import { faIR } from '@clerk/localizations'
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   icons: ["/Logo/Tiny.svg"],
 };
 
-import { ClerkProvider } from '@clerk/nextjs'
+// import { ClerkProvider } from '@clerk/nextjs'
 export default function RootLayout({ children }:{children:React.ReactNode}) {
   return (
-    <ClerkProvider localization={faIR}>
+    // <ClerkProvider localization={faIR}>
       <html>
         <body>
           <Header />
           {children}
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   )
 }
