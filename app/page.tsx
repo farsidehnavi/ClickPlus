@@ -1,4 +1,12 @@
 import style from "./page.module.css";
+import Logo from "./Components/Atoms/Logo/Logo";
+import {
+  FaWhatsapp,
+  FaAt,
+  FaTelegram,
+  FaMapMarker,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -46,15 +54,58 @@ export default function Home() {
         </div>
         <img className={style.Img} src={"/img/cpu.svg"} alt="" />
       </div>
-      <img src="/Seperation/edge.svg" alt="" className={style.Edge} />
+      <div className={style.Edge} />
       <div className={style.DarkPage}>
-        <div className={style.FirstRow}>
-          <img className={style.Img} src={"/img/brain.svg"} alt="" />
-          <div className={style.Newspaper}>
-            <div className={style.NTitle}>به مجله ی خبری ما بپیوندید</div>
-            <div className={style.JoinRow}>
-              <input type="text" className={style.Inp} placeholder="ایمیل" />
-              <button className={style.Join}>پیوستن</button>
+        <div className={style.DarkPageBoxView}>
+          <div className={style.FirstRow}>
+            <img className={style.Img} src={"/img/brain.svg"} alt="" />
+            <div className={style.Newspaper}>
+              <div className={style.NTitle}>به مجله ی خبری ما بپیوندید</div>
+              <div className={style.JoinRow}>
+                <input type="text" className={style.Inp} placeholder="ایمیل" />
+                <button className={style.Join}>پیوستن</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={style.Footer}>
+          <div className={style.FooterUp}>
+            <Logo />
+            <p className={style.UpText}>آینده هوش مصنوعی، فقط با یک کلیک</p>
+          </div>
+          <div className={style.FooterMiddle}>
+            <div className={style.MiddleLists}>
+              <div className={style.MiddleList}>
+                <p className={style.MiddleHeader}>مدل ها</p>
+                <p className={style.MiddleItem}>ChatGPT</p>
+                <p className={style.MiddleItem}>Midjourney</p>
+                <p className={style.MiddleItem}>Nanobenana</p>
+                <p className={style.MiddleItem}>Gemini</p>
+                <p className={style.MiddleItem}>Github Copilot</p>
+              </div>
+              <div className={style.MiddleList}>
+                <p className={style.MiddleHeader}>منو</p>
+                <p className={style.MiddleItem}>A</p>
+                <p className={style.MiddleItem}>B</p>
+                <p className={style.MiddleItem}>C</p>
+                <p className={style.MiddleItem}>D</p>
+              </div>
+            </div>
+            <div className={style.ContactUs}>
+              <FaWhatsapp className={style.ConnectionButton} />
+              <FaTelegram className={style.ConnectionButton} />
+              <FaAt className={style.ConnectionButton} />
+              <FaMapMarker className={style.ConnectionButton} />
+              <FaPhoneAlt className={style.ConnectionButton} />
+            </div>
+          </div>
+          <div className={style.FooterBottom}>
+            <p className={style.BottomText}>
+              © 2026 Click Plus. All rights reserved.
+            </p>
+            <div className={style.BottomLinks}>
+              <p className={style.BottomLink}>قوانین و مقررات</p>
+              <p className={style.BottomLink}>قوانین و مقررات</p>
             </div>
           </div>
         </div>
